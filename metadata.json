@@ -1,0 +1,5 @@
+{
+  "name": "Cartes Mémoires Interactives",
+  "description": "Une application web pour créer, sauvegarder et consulter des cartes mémoires (flashcards). Idéal pour l'apprentissage et la mémorisation de vocabulaire, concepts ou notes.",
+  "requestFramePermissions": []
+}
