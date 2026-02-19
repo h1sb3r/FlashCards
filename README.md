@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# FlashCards Cloud
 
-# Run and deploy your AI Studio app
+Modern rewrite of FlashCards for multi-device sync (PC + mobile), built for Vercel.
 
-This contains everything you need to run your app locally.
+- Next.js App Router + TypeScript strict
+- PostgreSQL + Prisma
+- Email/password authentication (NextAuth Credentials)
+- Serverless API routes (`/api/*`)
+- Optional Gemini assist (`GEMINI_API_KEY`)
+- PWA basics (manifest + service worker)
 
-View your app in AI Studio: https://ai.studio/apps/drive/16v3ardkx9WM682Ch-GpURvsj6FrUfiog
+## Quick Start
 
-## Run Locally
+```bash
+npm install
+npm run db:generate
+npm run db:push
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+Create `.env.local` from `.env.example` before running.
 
+## Documentation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- French setup + deploy guide: `README_FR.md`
+- Database schema + sync strategy: `docs/SCHEMA.md`
